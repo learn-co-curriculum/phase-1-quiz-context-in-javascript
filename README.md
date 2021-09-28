@@ -1,7 +1,7 @@
 ---
 id: 12284
 course_id: 3297
-repo: phase-1-quiz-context-in-javascript-quiz
+repo: phase-1-quiz-context-in-javascript
 ---
 
 # Context in JavaScript Quiz
