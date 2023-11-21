@@ -1,0 +1,484 @@
+{
+  "quiz": {
+    "id": 42559,
+    "title": "Context in JavaScript Quiz",
+    "html_url": "https://learning.flatironschool.com/courses/6638/quizzes/42559",
+    "mobile_url": "https://learning.flatironschool.com/courses/6638/quizzes/42559?force_user=1&persist_headless=1",
+    "description": "<div id=\"git-data-element\" data-org=\"learn-co-curriculum\" data-repo=\"phase-1-quiz-context-in-javascript\"></div>\n<header class=\"fis-header\"><a class=\"fis-git-link\" href=\"https://github.com/learn-co-curriculum/phase-1-quiz-context-in-javascript/issues/new\" target=\"_blank\"><img id=\"issue-img\" title=\"Create New Issue\" alt=\"Create New Issue\"></a></header>\n<p>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again.</p>\n<p>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</p>",
+    "quiz_type": "assignment",
+    "time_limit": null,
+    "timer_autosubmit_disabled": false,
+    "shuffle_answers": true,
+    "show_correct_answers": true,
+    "scoring_policy": "keep_highest",
+    "allowed_attempts": 3,
+    "one_question_at_a_time": true,
+    "question_count": 8,
+    "points_possible": 8.0,
+    "cant_go_back": false,
+    "access_code": null,
+    "ip_filter": null,
+    "due_at": null,
+    "lock_at": null,
+    "unlock_at": null,
+    "published": false,
+    "unpublishable": true,
+    "locked_for_user": true,
+    "lock_info": {
+      "missing_permission": "participate_as_student",
+      "asset_string": "quizzes:quiz_42559"
+    },
+    "lock_explanation": "This quiz is currently locked.",
+    "hide_results": null,
+    "show_correct_answers_at": null,
+    "hide_correct_answers_at": null,
+    "all_dates": [
+      {
+        "due_at": null,
+        "unlock_at": null,
+        "lock_at": null,
+        "base": true
+      }
+    ],
+    "can_unpublish": true,
+    "can_update": true,
+    "require_lockdown_browser": false,
+    "require_lockdown_browser_for_results": false,
+    "require_lockdown_browser_monitor": false,
+    "lockdown_browser_monitor_data": "",
+    "speed_grader_url": null,
+    "permissions": {
+      "manage": true,
+      "read": true,
+      "create": true,
+      "update": true,
+      "submit": true,
+      "preview": true,
+      "delete": true,
+      "read_statistics": true,
+      "grade": true,
+      "review_grades": true,
+      "view_answer_audits": true
+    },
+    "quiz_reports_url": "https://learning.flatironschool.com/api/v1/courses/6638/quizzes/42559/reports",
+    "quiz_statistics_url": "https://learning.flatironschool.com/api/v1/courses/6638/quizzes/42559/statistics",
+    "message_students_url": "https://learning.flatironschool.com/api/v1/courses/6638/quizzes/42559/submission_users/message",
+    "section_count": 1,
+    "important_dates": false,
+    "quiz_submission_versions_html_url": "https://learning.flatironschool.com/courses/6638/quizzes/42559/submission_versions",
+    "assignment_id": 223851,
+    "one_time_results": false,
+    "only_visible_to_overrides": false,
+    "assignment_group_id": 19770,
+    "show_correct_answers_last_attempt": true,
+    "version_number": 3,
+    "has_access_code": false,
+    "post_to_sis": false,
+    "migration_id": "g723184c530520052e47239e4d7ec7d3c",
+    "in_paced_course": false,
+    "question_types": [
+
+    ]
+  },
+  "questions": [
+    {
+      "id": 289876,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 1,
+      "question_name": "Context: Apply",
+      "question_type": "multiple_choice_question",
+      "question_text": "Say we have a <code>sendUpdate</code> function that we want to use to send an account\nupdate to one of our customers (<code>customer1</code>). <code>sendUpdate</code> takes two arguments:\nthe message text and the date. Which of the following shows the correct\ninvocation of <code>apply</code>?",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "Source/s:Context and Explicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/context-and-explicit-setting?module_item_id=523561\">Context and Explicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_124",
+          "id": 124,
+          "text": "sendUpdate.apply(customer1, [message, date]);",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">sendUpdate</span><span class=\"p\">.</span><span class=\"nx\">apply</span><span class=\"p\">(</span><span class=\"nx\">customer1</span><span class=\"p\">,</span> <span class=\"p\">[</span><span class=\"nx\">message</span><span class=\"p\">,</span> <span class=\"nx\">date</span><span class=\"p\">]);</span>\n</code></pre></div>",
+          "comments": "Correct! We call the apply method on the sendUpdate function, passing in two arguments: the desired context object, and an array containing the arguments to be passed along to sendUpdate.",
+          "comments_html": "Correct! We call the <code>apply</code> method on the <code>sendUpdate</code> function, passing in two\narguments: the desired context object, and an array containing the arguments to\nbe passed along to <code>sendUpdate</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_8261",
+          "id": 8261,
+          "text": "sendUpdate.apply(customer1, { message, date });",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">sendUpdate</span><span class=\"p\">.</span><span class=\"nx\">apply</span><span class=\"p\">(</span><span class=\"nx\">customer1</span><span class=\"p\">,</span> <span class=\"p\">{</span> <span class=\"nx\">message</span><span class=\"p\">,</span> <span class=\"nx\">date</span> <span class=\"p\">});</span>\n</code></pre></div>",
+          "comments": "Close! However, the arguments that will be passed along to sendUpdate should be enclosed in an array rather than in curly brackets.",
+          "comments_html": "Close! However, the arguments that will be passed along to sendUpdate should be\nenclosed in an array rather than in curly brackets."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_4489",
+          "id": 4489,
+          "text": "sendUpdate.apply(customer1, message, date);",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">sendUpdate</span><span class=\"p\">.</span><span class=\"nx\">apply</span><span class=\"p\">(</span><span class=\"nx\">customer1</span><span class=\"p\">,</span> <span class=\"nx\">message</span><span class=\"p\">,</span> <span class=\"nx\">date</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "comments": "Close! However, the arguments that will be passed along to sendUpdate should be enclosed in an array. This syntax would work if you used the call method method instead.",
+          "comments_html": "Close! However, the arguments that will be passed along to <code>sendUpdate</code> should\nbe enclosed in an array. This syntax would work if you used the <code>call</code> method\nmethod instead."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_4797",
+          "id": 4797,
+          "text": "I don't know.",
+          "html": "I don't know.",
+          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289877,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 2,
+      "question_name": "Context: Bind",
+      "question_type": "short_answer_question",
+      "question_text": "<p>The ____ method returns a copy of the function it is called on, in which the\ncontext is \"set\" to the object that's passed to it as an argument.</p>\n\n<p>Example:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"nx\">thor</span> <span class=\"o\">=</span> <span class=\"p\">{</span>\n  <span class=\"na\">firstName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Thor</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n  <span class=\"na\">familyName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Odinsson</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n<span class=\"p\">};</span>\n<span class=\"kd\">function</span> <span class=\"nx\">introWithContext</span><span class=\"p\">(</span><span class=\"nx\">line</span><span class=\"p\">)</span> <span class=\"p\">{</span>\n  <span class=\"k\">return</span> <span class=\"s2\">`</span><span class=\"p\">${</span><span class=\"k\">this</span><span class=\"p\">.</span><span class=\"nx\">firstName</span><span class=\"p\">}</span><span class=\"s2\"> </span><span class=\"p\">${</span><span class=\"k\">this</span><span class=\"p\">.</span><span class=\"nx\">familyName</span><span class=\"p\">}</span><span class=\"s2\"> says: </span><span class=\"p\">${</span><span class=\"nx\">line</span><span class=\"p\">}</span><span class=\"s2\">`</span><span class=\"p\">;</span>\n<span class=\"p\">}</span>\n\n<span class=\"kd\">const</span> <span class=\"nx\">thorIntro</span> <span class=\"o\">=</span> <span class=\"nx\">introWithContext</span><span class=\"p\">.</span><span class=\"nx\">______</span><span class=\"p\">(</span><span class=\"nx\">thor</span><span class=\"p\">);</span>\n<span class=\"nx\">thorIntro</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">Sup?</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n<span class=\"c1\">// =&gt; Thor Odinsson says: Sup?</span>\n</code></pre></div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
+      "neutral_comments": "Source/s:Context and Explicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/context-and-explicit-setting?module_item_id=523561\">Context and Explicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "text": "bind",
+          "weight": 100,
+          "comments": "",
+          "id": 1281
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289878,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 3,
+      "question_name": "Context: Call",
+      "question_type": "multiple_answers_question",
+      "question_text": "What argument/arguments do you need to pass to the <code>call</code> method? (select all\nthat apply)",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "Source/s:Context and Explicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/context-and-explicit-setting?module_item_id=523561\">Context and Explicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_1339",
+          "id": 1339,
+          "text": "A context object.",
+          "comments": "Correct! The call method allows you to override the default context for the function being called by passing a context object to it as the first argument.",
+          "comments_html": "Correct! The <code>call</code> method allows you to override the default context for the\nfunction being called by passing a context object to it as the first argument."
+        },
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_9097",
+          "id": 9097,
+          "text": "A list of arguments to the function being called.",
+          "comments": "Correct! If the function being called takes any arguments, you pass those as additional arguments to call.",
+          "comments_html": "Correct! If the function being called takes any arguments, you pass those as\nadditional arguments to <code>call</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_3907",
+          "id": 3907,
+          "text": "Nothing needs to be provided.",
+          "comments": "At a minimum, you need to pass a context object to call. If the function being called takes any arguments, you also need to pass those to call.",
+          "comments_html": "At a minimum, you need to pass a context object to <code>call</code>. If the function being\ncalled takes any arguments, you also need to pass those to <code>call</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_4951",
+          "id": 4951,
+          "text": "The function to be called.",
+          "comments": "call is a method that is called on the function you want to execute: functionName.call(args)",
+          "comments_html": "<code>call</code> is a method that is <em>called on</em> the function you want to execute:\n<code>functionName.call(args)</code>"
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_3293",
+          "id": 3293,
+          "text": "I don't know.",
+          "html": "I don't know.",
+          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289879,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 4,
+      "question_name": "Context: Call",
+      "question_type": "multiple_choice_question",
+      "question_text": "<p>How can I use the <code>call</code> method to return <code>person1</code>'s full name?</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"nx\">person</span> <span class=\"o\">=</span> <span class=\"p\">{</span>\n  <span class=\"na\">fullName</span><span class=\"p\">:</span> <span class=\"kd\">function</span> <span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"k\">return</span> <span class=\"k\">this</span><span class=\"p\">.</span><span class=\"nx\">firstName</span> <span class=\"o\">+</span> <span class=\"dl\">\"</span><span class=\"s2\"> </span><span class=\"dl\">\"</span> <span class=\"o\">+</span> <span class=\"k\">this</span><span class=\"p\">.</span><span class=\"nx\">lastName</span><span class=\"p\">;</span>\n  <span class=\"p\">},</span>\n<span class=\"p\">};</span>\n\n<span class=\"kd\">const</span> <span class=\"nx\">person1</span> <span class=\"o\">=</span> <span class=\"p\">{</span>\n  <span class=\"na\">firstName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Sonia</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n  <span class=\"na\">lastName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Sotomayor</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n<span class=\"p\">};</span>\n\n<span class=\"kd\">const</span> <span class=\"nx\">person2</span> <span class=\"o\">=</span> <span class=\"p\">{</span>\n  <span class=\"na\">firstName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Elena</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n  <span class=\"na\">lastName</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Kagan</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n<span class=\"p\">};</span>\n</code></pre></div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "Source/s:Context and Explicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/context-and-explicit-setting?module_item_id=523561\">Context and Explicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_5",
+          "id": 5,
+          "text": "person.fullName.call(person1);",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">person</span><span class=\"p\">.</span><span class=\"nx\">fullName</span><span class=\"p\">.</span><span class=\"nx\">call</span><span class=\"p\">(</span><span class=\"nx\">person1</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "comments": "Correct! The function being called is person.fullName, and we pass the desired context object (person1) as the argument. Since the fullName function doesn't take any arguments, we only need to pass the one argument to call.",
+          "comments_html": "Correct! The function being called is <code>person.fullName</code>, and we pass the desired\ncontext object (<code>person1</code>) as the argument. Since the <code>fullName</code> function\ndoesn't take any arguments, we only need to pass the one argument to <code>call</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_7913",
+          "id": 7913,
+          "text": "person1.call(fullName);",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">person1</span><span class=\"p\">.</span><span class=\"nx\">call</span><span class=\"p\">(</span><span class=\"nx\">fullName</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "comments": "call is a method that needs to be called on a function, in this case person.fullName. The argument we pass to it is the context object, person1. The method call, therefore, should look like this: person.fullName.call(person1).",
+          "comments_html": "<code>call</code> is a method that needs to be called on a function, in this case\n<code>person.fullName</code>. The argument we pass to it is the context object, <code>person1</code>.\nThe method call, therefore, should look like this:\n<code>person.fullName.call(person1)</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_2740",
+          "id": 2740,
+          "text": "person.call(person1);",
+          "html": "<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"nx\">person</span><span class=\"p\">.</span><span class=\"nx\">call</span><span class=\"p\">(</span><span class=\"nx\">person1</span><span class=\"p\">);</span>\n</code></pre></div>",
+          "comments": "Close! But call is a method that needs to be called on a function, and person is not a function! Instead we need to call the call method on person.fullName. The method call, therefore, should look like this: person.fullName.call(person1).",
+          "comments_html": "Close! But <code>call</code> is a method that needs to be called on a function, and\n<code>person</code> is not a function! Instead we need to call the <code>call</code> method on\n<code>person.fullName</code>. The method call, therefore, should look like this:\n<code>person.fullName.call(person1)</code>."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_7064",
+          "id": 7064,
+          "text": "I don't know.",
+          "html": "I don't know.",
+          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289880,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 5,
+      "question_name": "Context: Execution Context",
+      "question_type": "multiple_choice_question",
+      "question_text": "When a JavaScript function is invoked, which of the following are included in\nits <em>execution context</em>?",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "Source/s:Introduction to Context",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/assignments/223901?module_item_id=523559\">Introduction to Context</a></li></ul><p></p>",
+      "answers": [
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_3610",
+          "id": 3610,
+          "text": "The function's execution context includes all of these.",
+          "html": "The function's execution context includes all of these.",
+          "comments": "Correct! The function will have a function execution context that contains references to any functions or variables defined within it, but its overall execution context also includes the _global execution context_and the contexts of any functions it is enclosed in.",
+          "comments_html": "Correct! The function will have a <em>function execution context</em> that contains\nreferences to any functions or variables defined within it, but its overall\nexecution context also includes the _global execution context_and the\ncontexts of any functions it is enclosed in."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_4754",
+          "id": 4754,
+          "text": "The global execution context.",
+          "comments": "This is partially correct - the function's execution context does include the global execution context, but it also includes its own function execution context and the contexts of any functions it is enclosed in.",
+          "comments_html": "This is partially correct - the function's execution context does <em>include</em> the\nglobal execution context, but it also includes its own function execution\ncontext and the contexts of any functions it is enclosed in."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_5728",
+          "id": 5728,
+          "text": "The function execution context.",
+          "comments": "This is partially correct - the function does have its own function execution context, but its overall execution context also includes the global execution context and the contexts of any functions it is enclosed in.",
+          "comments_html": "This is partially correct - the function does have its own function execution\ncontext, but its overall execution context also includes the global execution\ncontext and the contexts of any functions it is enclosed in."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_4292",
+          "id": 4292,
+          "text": "The context of anything available via the scope chain.",
+          "comments": "This is partially correct - the function's execution context does include the contexts of any functions it is enclosed in, but it also includes its own function execution context and the global execution context.",
+          "comments_html": "This is partially correct - the function's execution context does <em>include</em> the\ncontexts of any functions it is enclosed in, but it also includes its own\nfunction execution context and the global execution context."
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_1411",
+          "id": 1411,
+          "text": "I don't know.",
+          "html": "I don't know.",
+          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289881,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 6,
+      "question_name": "Context: Execution Context",
+      "question_type": "true_false_question",
+      "question_text": "<p>Given the following JavaScript code:</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">hello</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"k\">this</span><span class=\"p\">);</span>\n<span class=\"p\">}</span>\n<span class=\"nx\">hello</span><span class=\"p\">();</span>\n</code></pre></div>\n<p><code>this</code> will be the global object when the <code>hello</code> function is invoked.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
+      "neutral_comments": "Source/s:Context and Implicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/context-and-implicit-setting\">Context and Implicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "weight": 100,
+          "migration_id": "RESPONSE_7144",
+          "id": 7144,
+          "text": "True"
+        },
+        {
+          "weight": 0,
+          "migration_id": "RESPONSE_5694",
+          "id": 5694,
+          "text": "False"
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289882,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 7,
+      "question_name": "Context: This",
+      "question_type": "short_answer_question",
+      "question_text": "<p>Inside a function, we use the ____ keyword to access the function's context\nobject and its properties. For example, what keyword would you need to use in\norder to log <code>byronPoodle</code>'s name when the <code>warn</code> method is called?</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">const</span> <span class=\"nx\">byronPoodle</span> <span class=\"o\">=</span> <span class=\"p\">{</span>\n  <span class=\"na\">name</span><span class=\"p\">:</span> <span class=\"dl\">\"</span><span class=\"s2\">Byron</span><span class=\"dl\">\"</span><span class=\"p\">,</span>\n  <span class=\"na\">ageInYears</span><span class=\"p\">:</span> <span class=\"mi\">2</span><span class=\"p\">,</span>\n  <span class=\"na\">warn</span><span class=\"p\">:</span> <span class=\"kd\">function</span> <span class=\"p\">()</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"nx\">_______</span><span class=\"p\">.</span><span class=\"nx\">name</span><span class=\"p\">);</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"s2\">`Bark bark bark`</span><span class=\"p\">);</span>\n  <span class=\"p\">},</span>\n<span class=\"p\">};</span>\n<span class=\"nx\">byronPoodle</span><span class=\"p\">.</span><span class=\"nx\">warn</span><span class=\"p\">();</span>\n</code></pre></div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
+      "neutral_comments": "Source/s:Introduction to ContextContext and Implicit Setting",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/assignments/223901\">Introduction to Context</a></li><li><a href=\"/courses/6638/pages/context-and-implicit-setting\">Context and Implicit Setting</a></li></ul><p></p>",
+      "answers": [
+        {
+          "text": "this",
+          "weight": 100,
+          "comments": "",
+          "id": 9155
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "id": 289883,
+      "quiz_id": 42559,
+      "quiz_group_id": null,
+      "assessment_question_id": null,
+      "position": 8,
+      "question_name": "Context: This",
+      "question_type": "short_answer_question",
+      "question_text": "A function defined using _______ syntax does not create its own context.",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "Be sure to study the source/s for this question. You'll get it next time.",
+      "neutral_comments": "Source/s:The Lost Context Bug Code-Along",
+      "correct_comments_html": null,
+      "incorrect_comments_html": null,
+      "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/6638/pages/the-lost-context-bug-code-along?module_item_id=523563\">The Lost Context Bug Code-Along</a></li></ul><p></p>",
+      "answers": [
+        {
+          "text": "arrow function",
+          "weight": 100,
+          "comments": "",
+          "id": 4844
+        },
+        {
+          "text": "arrow",
+          "weight": 100,
+          "comments": "",
+          "id": 1255
+        },
+        {
+          "text": "=>",
+          "weight": 100,
+          "comments": "",
+          "id": 7333
+        },
+        {
+          "text": "() => {}",
+          "weight": 100,
+          "comments": "",
+          "id": 5859
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    }
+  ]
+}
